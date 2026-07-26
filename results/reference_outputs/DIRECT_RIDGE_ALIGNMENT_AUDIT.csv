@@ -1,0 +1,7 @@
+CHECK,VALUE,STATUS
+row_count_match,1,PASS
+row_id_exact,1,PASS
+depth_max_diff_m,0,PASS
+n_non_nan_preds,492,INFO
+pearson_r_vs_target_popB,0.86357374341181,INFO
+exact_copy_rate_pct,0,PASS

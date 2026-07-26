@@ -1,0 +1,7 @@
+CHECK,PASSED,STATUS
+no_VS_in_X,1,PASS
+no_VP_in_X,1,PASS
+pm_fitted_WellA_only,1,PASS
+training_WellA_rows,1,PASS
+no_WellB_in_training,1,PASS
+target_range_valid,1,PASS

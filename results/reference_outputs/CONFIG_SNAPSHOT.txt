@@ -1,0 +1,5 @@
+RUN_ID: run_20260723_170341
+Seeds: 7   42  123 | Canonical: 42
+Features S1: GR,DT,NPHI,RHOB
+Partition test_frac: 0.20 | k-fold: 5
+Execution environment: cpu

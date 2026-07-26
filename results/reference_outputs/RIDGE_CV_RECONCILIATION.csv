@@ -1,0 +1,3 @@
+Method,Ridge_CV_R2,Ridge_CV_RMSE,Notes
+Phase9_ablation,0.597187,0.050960,PNN-only_OOF_proxy
+Level2_nested_CV,0.641825,0.048250,AUTHORITATIVE_4model_OOF

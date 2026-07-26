@@ -1,0 +1,17 @@
+# Proprietary data - never commit
+data/*.xlsx
+data/*.xls
+data/*.csv
+
+# MATLAB binaries / generated artifacts
+*.mat
+*.asv
+*.autosave
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+
+# Full run archive (only curated results/reference_outputs/ is tracked)
+runs/

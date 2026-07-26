@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below, alongside the associated manuscript."
+type: software
+title: "VsPredict-Geoenergy: Leakage-Free Cross-Well Shear-Wave Velocity Prediction Pipeline"
+authors:
+  - family-names: Wibowo
+    given-names: Rahmat Catur
+    affiliation: "Universitas Lampung"
+  - family-names: Mahli
+    given-names: Razki Alfatah Kahiru
+    affiliation: "Universitas Lampung"
+  - family-names: Kumalasari
+    given-names: Isti Nur
+    affiliation: "Universitas Lampung"
+  - family-names: Kurniawan
+    given-names: Andri
+    affiliation: "Universitas Lampung"
+  - family-names: Husni
+    given-names: "Yayan Mi'rojul"
+    affiliation: "Universitas Lampung"
+  - family-names: Mulyanto
+    given-names: Bagus Sapto
+    affiliation: "Universitas Lampung"
+  - family-names: Sarkowi
+    given-names: Muh
+    affiliation: "Universitas Lampung"
+repository-code: "https://github.com/REPLACE-WITH-YOUR-USERNAME/VsPredict-Geoenergy"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Cross-Well Shear-Wave Velocity Prediction from Conventional Well Logs under Severe Covariate Shift: Reproducible Leakage-Free Validation and Geomechanical Consequences"
+  authors:
+    - family-names: Wibowo
+      given-names: Rahmat Catur
+    - family-names: Mahli
+      given-names: Razki Alfatah Kahiru
+    - family-names: Kumalasari
+      given-names: Isti Nur
+    - family-names: Kurniawan
+      given-names: Andri
+    - family-names: Husni
+      given-names: "Yayan Mi'rojul"
+    - family-names: Mulyanto
+      given-names: Bagus Sapto
+    - family-names: Sarkowi
+      given-names: Muh
+  journal: "Geoenergy Science and Engineering"
+  status: submitted

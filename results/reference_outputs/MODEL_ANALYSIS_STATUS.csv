@@ -1,0 +1,9 @@
+MODEL,SPECIFICATION_STATUS,ROLE,PUBLICATION_CONSTRAINT
+ridge_stacker,pre-specified,primary_meta,PRIMARY_RESULT_FROZEN
+pnn,pre-specified,base,AUXILIARY
+mlffnn,pre-specified,base,AUXILIARY
+dffnn,pre-specified,base,AUXILIARY
+cnn1d,pre-specified,base,AUXILIARY
+icnn,pre-specified,meta,AUXILIARY
+hybrid_icnn,pre-specified,meta,AUXILIARY
+direct_ridge,post-hoc,sensitivity_post_hoc,SENSITIVITY_ONLY_CANNOT_REDEFINE_PRIMARY

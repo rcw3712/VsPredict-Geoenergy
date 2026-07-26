@@ -1,0 +1,7 @@
+DIRECT_RIDGE MODEL EQUATION (Post-Hoc Sensitivity)
+V_S = 2.265763 + 0.016303 * GR_zscored - 0.054362 * DT_zscored - 0.030169 * NPHI_zscored + 0.019415 * RHOB_zscored
+
+Preprocessor: pm_full (Well-A only, n=492)
+Regularization: Ridge, lambda=1.0 (fixed, not tuned on Well-B)
+Status: POST_HOC — sensitivity analysis only
+Constraint: Cannot redefine primary analysis without third-well confirmation
