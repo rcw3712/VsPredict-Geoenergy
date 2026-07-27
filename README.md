@@ -2,7 +2,7 @@
 
 Reproducibility code for:
 
-> Wibowo, R.C., Mahli, R.A.K., Kumalasari, I.N., Kurniawan, A., Husni, Y.M., Mulyanto, B.S., & Sarkowi, M. **Cross-Well Shear-Wave Velocity Prediction from Conventional Well Logs under Severe Covariate Shift: Reproducible Leakage-Free Validation and Geomechanical Consequences.** Submitted to *Geoenergy Science and Engineering* (Elsevier).
+> Wibowo, R.C., Mahli, R.A.K., Kumalasari, I.N., Kurniawan, A., Husni, Y.M., Mulyanto, B.S., & Sarkowi, M. **Cross-Well Shear-Wave Velocity Prediction under Severe Covariate Shift: Leakage-Free Validation and Geomechanical Consequences.** Submitted to *Geoenergy Science and Engineering* (Elsevier).
 
 This repository contains the MATLAB pipeline used to develop, validate, and evaluate machine-learning models for predicting shear-wave velocity (Vs) from conventional well logs (GR, DT, NPHI, RHOB), with a leakage-free, depth-blocked, Well-A-only model-development protocol and a genuinely blind, non-overlapping cross-well evaluation on Well-B.
 
