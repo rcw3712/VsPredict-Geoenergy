@@ -24,7 +24,7 @@ authors:
   - family-names: Sarkowi
     given-names: Muh
     affiliation: "Universitas Lampung"
-repository-code: "https://github.com/REPLACE-WITH-YOUR-USERNAME/VsPredict-Geoenergy"
+repository-code: "https://github.com/rcw3712/VsPredict-Geoenergy"
 license: MIT
 preferred-citation:
   type: article
