@@ -28,7 +28,7 @@ repository-code: "https://github.com/rcw3712/VsPredict-Geoenergy"
 license: MIT
 preferred-citation:
   type: article
-  title: "Cross-Well Shear-Wave Velocity Prediction from Conventional Well Logs under Severe Covariate Shift: Reproducible Leakage-Free Validation and Geomechanical Consequences"
+  title: "Cross-Well Shear-Wave Velocity Prediction under Severe Covariate Shift: Leakage-Free Validation and Geomechanical Consequences"
   authors:
     - family-names: Wibowo
       given-names: Rahmat Catur
