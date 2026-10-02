@@ -1,0 +1,8 @@
+"FILE","SHA256","ROLE"
+"ajse_extension/+ajse_icnn/fit_model.m","5fab886777307ad1c21e283a9f350792ba23ad5feb1e80cff20f2bbb19136f27","SOURCE"
+"ajse_extension/+ajse_icnn/fixed_hp.m","2041ac74f1ffa1e85f9c2b1c4beca5e39bbcb9b3f1a79dd19f001913c5867032","SOURCE"
+"ajse_extension/+ajse_icnn/paired_block_bootstrap.m","bc772c63ba3bd210148c876b02f7c1fa7205e222623a23aa9db6bc5c2d01289d","SOURCE"
+"ajse_extension/+ajse_icnn/predict_model.m","a0f70afbd1097c6f670bbd321c686593413d99d85e80b32bd7d573d2e713f9ae","SOURCE"
+"ajse_extension/README.md","b20e417751202b91e8c21d060e815dd6458b96c75717cf32cdbfd40479f32064","DOCUMENTATION"
+"ajse_extension/run_ajse_icnn_comparator.m","c7954db5babf8bd3762be53d47a6ee35bb71f5f34ed2a351e8ea32cc740fb7cc","SOURCE"
+"ajse_extension/selftest_ajse_icnn_comparator.m","c9ea715ff517e8801985f4556d4121877744249a225f21353e8433445e6c4481","SOURCE"

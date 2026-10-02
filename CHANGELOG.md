@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026.10 AJSE submission package
+
+- Reframed the repository for the AJSE Petroleum Engineering submission while retaining historical repository and run names as immutable provenance.
+- Added the post-hoc I-CNN and Hybrid I-CNN comparator pipeline and non-sensitive aggregate results from `run_AJSE_ICNN_corrected_20261001_111157`.
+- Added final AJSE TIFF figures and editable/source artifacts for Supplementary Fig. S1.
+- Corrected Supplementary Fig. S1 terminology from shared-depth/QC wording to exact-duplicate exclusion and a target-informed measured Vp/Vs screen.
+- Corrected the documented frozen PNN spread grid to `0.1, 0.2, 0.5, 1.0, 2.0`.
+- Updated citation and archive-scope metadata for *Arabian Journal for Science and Engineering*.
+
 ## 2026.09 PED corrected two-well analysis
 
 - Corrected the same-well holdout path to use the canonical meta-feature scaler and stacker prediction API.

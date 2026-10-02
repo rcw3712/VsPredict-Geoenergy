@@ -5,7 +5,7 @@ out_dir = fullfile(ext_dir, '02_provenance');
 
 % ── Provenance table ──────────────────────────────────────────────────────
 rows = {
-    'PNN_spread',       '0.50',     '0.1:0.1:2.0',  'INNER_CV_TUNED',        'outer-training only', 'Yes','Yes', 'No',  'main_nrr_pipeline.m', 'select_model',   'INNER_CV_TUNED';
+    'PNN_spread',       '0.50',     '0.1,0.2,0.5,1.0,2.0',  'INNER_CV_TUNED',        'outer-training only', 'Yes','Yes', 'No',  'main_nrr_pipeline.m', 'select_model',   'INNER_CV_TUNED';
     'Ridge_lambda',     '0.001',    '0.001,0.01,0.1,1,10', 'INNER_CV_TUNED', 'outer-training only', 'Yes','Yes', 'No',  'main_nrr_pipeline.m', 'select_model',   'INNER_CV_TUNED';
     'MLFFNN_layers',    '[64,32]',  'fixed',         'FIXED_FROM_PRIOR_DEVELOPMENT','Well-A legacy', 'No','No',  'Yes', 'main_nrr_pipeline.m', 'build_mlffnn',   'FIXED_FROM_PRIOR_DEVELOPMENT';
     'DFFNN_layers',     '[128,64,32]','fixed',        'FIXED_FROM_PRIOR_DEVELOPMENT','Well-A legacy','No','No',  'Yes', 'main_nrr_pipeline.m', 'build_dffnn',    'FIXED_FROM_PRIOR_DEVELOPMENT';

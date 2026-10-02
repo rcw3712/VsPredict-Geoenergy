@@ -1,0 +1,24 @@
+{
+  "run_id": "run_AJSE_ICNN_corrected_20261001_111157",
+  "reference_run_id": "run_PED_corrected_20260910_071523",
+  "seed": 42,
+  "created_at": "20261001T111158",
+  "provenance_class": "HISTORICAL_ARCHITECTURE_POST_HOC_REEVALUATION",
+  "wellB_used_for_tuning": false,
+  "meta_hp": {
+    "kernels": [
+      3,
+      5,
+      7
+    ],
+    "filters": 32,
+    "lr": 0.0001,
+    "epochs": 200,
+    "batch": 32,
+    "window": 16,
+    "selection_status": "FROZEN_FROM_PREDECESSOR_ARCHITECTURE",
+    "wellB_used_for_tuning": false
+  },
+  "matlab_version": "24.1.0.2537033 (R2024a)",
+  "execution_environment": "cpu"
+}

@@ -4,23 +4,24 @@
 
 The repository `rcw3712/VsPredict-NRR` is retained as the umbrella project-history archive. Its name records an earlier journal-target phase and does not imply that every branch or release targets that journal.
 
-The current PED materials are isolated on branch `ped-canonical-20260910` and are identified by:
+The current AJSE submission is identified by:
 
-- canonical run `run_PED_corrected_20260910_071523`;
-- extension manifest `ped_extension_run_PED_corrected_20260910_071523_20260910_114659`;
-- figure directory `figures/ped-canonical-20260910`;
-- aggregate results directory `results/ped_corrected_20260910`.
+- corrected reference run `run_PED_corrected_20260910_071523`;
+- corrected extension manifest `ped_extension_run_PED_corrected_20260910_071523_20260910_114659`;
+- AJSE comparator run `run_AJSE_ICNN_corrected_20261001_111157`;
+- figure directory `figures/ajse-submission-20261002`;
+- aggregate result directories `results/ped_corrected_20260910` and `results/ajse_icnn_20261001`.
 
-Earlier tags and the `nrr-v5-corrected-reanalysis` branch are immutable provenance snapshots. Their numerical values must not be substituted for the PED values.
+The legacy `PED` strings above are immutable run identifiers, not the current journal target. Earlier tags and the `nrr-v5-corrected-reanalysis` branch remain provenance snapshots. Their numerical values must not be substituted for the AJSE values.
 
 ## Zenodo
 
-DOI `10.5281/zenodo.22637960` is treated as the umbrella archival record. Before publication, create a dedicated Zenodo version from the PED GitHub release and include both authoritative identifiers above in its description and files. The version-specific Zenodo DOI—not merely the umbrella DOI—should be cited in the final accepted article.
+The concept DOI is `10.5281/zenodo.21614275`. Existing NRR/PED-era versions remain historical snapshots. A dedicated version must be created from the final AJSE submission commit before the accepted article cites a version-specific software DOI.
 
-## Integrity requirements for the PED release
+## Integrity requirements for an AJSE release
 
-1. Tag the merged PED commit without rewriting earlier tags.
-2. Attach the source archive, non-sensitive aggregate outputs, and run-labelled figure package.
-3. Verify `FIGURE_MANIFEST_SHA256.csv`, the canonical run manifest, and the extension manifest.
-4. State that row-level data and proprietary well logs are excluded.
+1. Tag the final AJSE commit without rewriting earlier tags.
+2. Attach source code, non-sensitive aggregate outputs, and the run-labelled figure package.
+3. Verify the canonical, extension, comparator, and figure SHA-256 manifests.
+4. State that row-level predictions, proprietary well logs, checkpoints, and model binaries are excluded.
 5. Record the Git commit SHA and version-specific Zenodo DOI in the accepted-manuscript metadata.

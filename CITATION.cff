@@ -1,9 +1,9 @@
 cff-version: 1.2.0
-message: "Please cite the versioned PED software release and associated manuscript."
+message: "Please cite the versioned AJSE software release and associated manuscript."
 type: software
-title: "VsPredict: corrected two-well cross-well shear-wave velocity pipeline"
-version: "2026.09-ped-corrected"
-date-released: "2026-09-10"
+title: "VsPredict: external-well shear-wave velocity validation pipeline"
+version: "2026.10-ajse-submission"
+date-released: "2026-10-02"
 authors:
   - family-names: "Wibowo"
     given-names: "Rahmat Catur"
@@ -32,7 +32,7 @@ repository-code: "https://github.com/rcw3712/VsPredict-NRR"
 license: "MIT"
 preferred-citation:
   type: article
-  title: "Two-well evaluation of shear-wave velocity transfer under severe log-distribution shift: Validation hierarchy and physical-admissibility assessment"
+  title: "External-Well Validation of Machine-Learning Shear-Wave Velocity Prediction from Conventional Well Logs under Severe Sonic-Log Shift: A Two-Well Case Study"
   authors:
     - family-names: "Wibowo"
       given-names: "Rahmat Catur"
@@ -48,5 +48,5 @@ preferred-citation:
       given-names: "Bagus Sapto"
     - family-names: "Sarkowi"
       given-names: "Muh"
-  journal: "Petroleum Exploration and Development"
+  journal: "Arabian Journal for Science and Engineering"
   status: "manuscript"

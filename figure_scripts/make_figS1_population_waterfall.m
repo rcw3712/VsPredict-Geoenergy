@@ -24,8 +24,8 @@ role_path=fullfile(canon_run_folder,'01_data_audit','DATA_ROLE_ROW_IDS.csv');
 assert(isfile(role_path),'FIGS1: role ledger not found');
 Tr=readtable(role_path,'TextType','string');
 n_dup=nnz(Tr.ROLE=="Well-B duplicate");
-n_popA_only=nnz(Tr.ROLE=="Pop-A primary blind");
-n_popB_ledger=nnz(Tr.ROLE=="Pop-B diagnostic QC");
+n_popA_only=nnz(Tr.ROLE=="Pop-A primary blind" | Tr.ROLE=="Pop-A primary external");
+n_popB_ledger=nnz(Tr.ROLE=="Pop-B diagnostic QC" | Tr.ROLE=="Pop-B target-informed diagnostic");
 assert(n_dup==n_ex1 && n_popA_only+n_popB_ledger==n_popA && ...
     n_popB_ledger==n_popB,'FIGS1: role-ledger counts mismatch');
 
@@ -45,13 +45,15 @@ for i = 1:3
     bar(ax1, x_pos(i), counts(i), 0.55, 'FaceColor', clrs{i}, 'EdgeColor','none');
 end
 
-% Removal annotations between bars
-text(ax1, 1.5, (n_tot+n_popA)/2, sprintf('−%d\nshared-depth',n_ex1),...
+% Removal annotations above the retained-population bars. Equal depth alone is
+% not treated as leakage; exclusion requires exact agreement in all audited
+% variables.
+text(ax1, 2, n_popA+82, sprintf('−%d exact duplicates',n_ex1),...
     'HorizontalAlignment','center','VerticalAlignment','middle',...
     'FontSize',8,'Color',[0.6 0.15 0.15],'FontWeight','bold','Interpreter','none');
-text(ax1, 2.5, (n_popA+n_popB)/2, sprintf('−%d\nVp/Vs QC',n_ex2),...
+text(ax1, 3, n_popB+58, sprintf('−%d measured Vp/Vs >= sqrt(2) screen',n_ex2),...
     'HorizontalAlignment','center','VerticalAlignment','middle',...
-    'FontSize',8,'Color',[0.6 0.15 0.15],'FontWeight','bold','Interpreter','none');
+    'FontSize',7,'Color',[0.6 0.15 0.15],'FontWeight','bold','Interpreter','none');
 
 % Connector dashed lines
 for i = 1:2
@@ -96,8 +98,8 @@ end
 % Rows
 rows = {
     'Well-B total',         492,   '100.0%';
-    'Pop-A: depth-disjoint', 329, '66.9%';
-    'Pop-B*: Vp/Vs QC', 236,   '48.0%';
+    'Pop-A: exact-copy excluded', 329, '66.9%';
+    'Pop-B*: measured Vp/Vs >= sqrt(2) screen', 236,   '48.0%';
 };
 for ri=1:3
     y_row = y_hdr - ri*row_h - 0.005;
@@ -113,7 +115,9 @@ end
 
 % Note below table
 text(ax2,0.50,0.29,...
-    sprintf('163 shared-depth coordinates excluded.\n93 additional rows had measured Vp/Vs < sqrt(2).\n* Pop-B is a target-informed diagnostic subset.'),...
+    sprintf(['163 exact duplicate records excluded (depth, GR, DT, NPHI, RHOB, Vs).\n' ...
+    '93 additional rows were excluded by the measured Vp/Vs >= sqrt(2) screen.\n' ...
+    '* Pop-B is a target-informed diagnostic subset.']),...
     'HorizontalAlignment','center','VerticalAlignment','top','FontSize',6.5,'Color',[0.4 0.4 0.4],'Interpreter','none');
 
 title(ax2,'(b) Canonical mask definition','FontSize',9,'FontWeight','bold','Interpreter','none');
