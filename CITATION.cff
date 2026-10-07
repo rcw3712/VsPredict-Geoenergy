@@ -1,9 +1,9 @@
 cff-version: 1.2.0
-message: "Please cite the versioned AJSE software release and associated manuscript."
+message: "Please cite the versioned JAG software release and associated manuscript."
 type: software
 title: "VsPredict: external-well shear-wave velocity validation pipeline"
-version: "2026.10-ajse-submission"
-date-released: "2026-10-02"
+version: "2026.10-jag-submission"
+date-released: "2026-10-07"
 authors:
   - family-names: "Wibowo"
     given-names: "Rahmat Catur"
@@ -32,7 +32,7 @@ repository-code: "https://github.com/rcw3712/VsPredict-NRR"
 license: "MIT"
 preferred-citation:
   type: article
-  title: "External-Well Validation of Machine-Learning Shear-Wave Velocity Prediction from Conventional Well Logs under Severe Sonic-Log Shift: A Two-Well Case Study"
+  title: "External-Well Transferability of Synthetic Shear-Wave Velocity under Severe Sonic-Log Shift: A Record-Disjoint Two-Well Case Study"
   authors:
     - family-names: "Wibowo"
       given-names: "Rahmat Catur"
@@ -48,5 +48,5 @@ preferred-citation:
       given-names: "Bagus Sapto"
     - family-names: "Sarkowi"
       given-names: "Muh"
-  journal: "Arabian Journal for Science and Engineering"
+  journal: "Journal of Applied Geophysics"
   status: "manuscript"

@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026.10 JAG submission release
+
+- Retargeted the active archive metadata to *Journal of Applied Geophysics* while preserving earlier tags and immutable run identifiers.
+- Added the final JAG Fig. 1–9 and Fig. S1–S2 package, source summaries, plotting script, and SHA-256 manifests.
+- Harmonized the archive title, citation metadata, model descriptions, bandwidth terminology, and provenance aliases with the audited JAG manuscript.
+- Added measured-data-only rock-physics diagnostics and retained proprietary well logs, row-level predictions, model binaries, and checkpoints outside the public archive.
+- Defined neutral aliases `R1`, `E1`, and `C1` for the corrected reference, extension, and historical-comparator runs.
+
 ## 2026.10 AJSE submission package
 
 - Reframed the repository for the AJSE Petroleum Engineering submission while retaining historical repository and run names as immutable provenance.

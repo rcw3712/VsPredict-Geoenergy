@@ -1,22 +1,22 @@
 # VsPredict external-well shear-wave velocity archive
 
-This repository is the project-history and reproducibility archive for the VsPredict cross-well shear-wave velocity study. The repository name `VsPredict-NRR` is historical: it is an umbrella archive for immutable predecessor snapshots and the current analysis prepared for *Arabian Journal for Science and Engineering* (AJSE), Petroleum Engineering.
+This repository is the project-history and reproducibility archive for the VsPredict cross-well shear-wave velocity study. The repository name `VsPredict-NRR` is historical: it is an umbrella archive for immutable predecessor snapshots and the current analysis prepared for the *Journal of Applied Geophysics* (JAG).
 
-Earlier tagged and branched snapshots remain available for provenance. They are not authoritative for the current AJSE manuscript.
+Earlier tagged and branched snapshots remain available for provenance. They are not authoritative for the current JAG manuscript.
 
-## Current AJSE analysis
+## Current JAG analysis
 
 Manuscript working title:
 
-> **External-Well Validation of Machine-Learning Shear-Wave Velocity Prediction from Conventional Well Logs under Severe Sonic-Log Shift: A Two-Well Case Study**
+> **External-Well Transferability of Synthetic Shear-Wave Velocity under Severe Sonic-Log Shift: A Record-Disjoint Two-Well Case Study**
 
 This is a two-well calibration-to-external-well study. It evaluates one transfer event and does not claim population-wide geological generalization. Well-B had been examined in predecessor project analyses; consequently, `frozen primary` and `post hoc` denote the analysis hierarchy and are not claims of prospective preregistration.
 
-| Item | Authoritative AJSE value |
+| Item | Authoritative JAG value |
 |---|---:|
 | Corrected reference run | `run_PED_corrected_20260910_071523` |
 | Corrected extension manifest | `ped_extension_run_PED_corrected_20260910_071523_20260910_114659` |
-| AJSE I-CNN comparator run | `run_AJSE_ICNN_corrected_20261001_111157` |
+| Historical-architecture comparator run | `run_AJSE_ICNN_corrected_20261001_111157` |
 | Well-A development / same-well holdout | 392 / 100 |
 | Exact duplicate records excluded | 163 |
 | Primary external population, Pop-A | 329 |
@@ -49,13 +49,13 @@ The corrected pipeline propagates physical depth-segment identifiers to CNN fitt
 +nrr_eval/                     nested CV, external evaluation, diagnostics
 +nrr_report/                   report generation
 ped_extension/                 corrected targeted extension and audit gates
-ajse_extension/                I-CNN and Hybrid I-CNN comparator pipeline
+ajse_extension/                historically named I-CNN/Hybrid I-CNN comparator pipeline
 results/ped_corrected_20260910/
   canonical/                   non-sensitive corrected aggregate outputs
   extension/                   non-sensitive corrected extension outputs
-results/ajse_icnn_20261001/    non-sensitive AJSE comparator aggregates
-figures/ajse-submission-20261002/
-                               final AJSE TIFF figures and editable Fig. S1
+results/ajse_icnn_20261001/    non-sensitive historical-comparator aggregates
+figures/jag-submission-20261007/
+                               final JAG TIFF figures, source CSVs, and manifests
 tests/                         inherited integrity tests
 run_ped_corrected_pipeline.m   corrected reference-pipeline entry point
 selftest_ped_codex_patch_v3.m  fail-closed patch self-test
@@ -84,6 +84,12 @@ selftest_ped_codex_patch_v3
 result = run_ped_corrected_pipeline;
 ```
 
+For a self-contained check of the public archive (no proprietary logs required), run:
+
+```matlab
+run_public_release_tests
+```
+
 Create a second independent clean-session run and compare the two run IDs:
 
 ```matlab
@@ -97,7 +103,7 @@ cd ped_extension
 run_ped_targeted_extension
 ```
 
-Run the AJSE historical-architecture comparators from the project root:
+Run the historically named architecture-comparator package from the project root:
 
 ```matlab
 addpath('ajse_extension')
@@ -109,19 +115,20 @@ The committed aggregate outputs correspond to the three run identifiers above. R
 
 ## Figures
 
-The current submission figures are under [`figures/ajse-submission-20261002`](figures/ajse-submission-20261002). `FIGURE_MANIFEST_SHA256.csv` records hashes and source-run provenance.
+The current submission figures are under [`figures/jag-submission-20261007`](figures/jag-submission-20261007). `FIGURE_MANIFEST_SHA256.csv` records hashes and source-run provenance.
 
 - Figures 1 and 7 depend on audited logs, masks, and distribution-shift statistics.
-- Figures 2–6 and 8 use the corrected reference and AJSE comparator results.
-- Supplementary Fig. S1 uses `exact duplicate` terminology and a target-informed measured Vp/Vs screen; its MATLAB `.fig`, vector PDF, PNG, TIFF, and source script are included.
+- Figures 2–6, 8, and 9 use corrected reference and historical-comparator results.
+- Figure 7 is a measured-data-only rock-physics consistency diagnostic.
+- Supplementary Fig. S1 uses exact-duplicate terminology and a target-informed measured Vp/Vs screen.
 - Supplementary Fig. S2 uses corrected multi-seed outputs.
 
 ## Archive and citation status
 
 - GitHub: this repository is the project-history umbrella archive.
 - Zenodo concept DOI: [`10.5281/zenodo.21614275`](https://doi.org/10.5281/zenodo.21614275).
-- The existing PED-era Zenodo version is a historical snapshot and does not yet constitute a versioned AJSE release.
-- Before final publication, create a dedicated versioned GitHub/Zenodo release from the AJSE submission commit and cite the version-specific DOI in the accepted article.
+- The existing PED-era Zenodo version is a historical snapshot and does not constitute the current JAG release.
+- The JAG submission release is tagged `jag-2026.10-submission`; cite its version-specific Zenodo DOI once the corresponding Zenodo version is published.
 
 ## Data policy
 
